@@ -11,8 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('layouts.blog');
+Route::get('/welcome/{lang}', function ($lang) {
+    App::setLocale($lang);
+    return view('welcome');
 });
 
 Auth::routes();
