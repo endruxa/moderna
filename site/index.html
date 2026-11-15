@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Moderna — Motion &amp; 3D Studio</title>
+  <meta name="description" content="Moderna is a studio for real-time 3D, motion design and interactive web experiences." />
+  <meta name="theme-color" content="#0c0b09" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='12' fill='%23ff5a1f'/></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;700;800&family=Manrope:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+  <script type="importmap">
+    { "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js" } }
+  </script>
+</head>
+<body>
+  <canvas id="scene" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a href="#top" class="logo">Moderna<span>®</span></a>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#process">Process</a>
+      <a href="#contact" class="nav-cta">Start a project</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="eyebrow mono reveal" style="--d:.1s">[ Real-time 3D &amp; motion studio — est. 2018 ]</p>
+      <h1 class="reveal" style="--d:.2s">
+        <span class="line">We make</span>
+        <span class="line"><em>matter</em> move.</span>
+      </h1>
+      <div class="hero-foot reveal" style="--d:.45s">
+        <p>Moderna builds interactive 3D, product animation and WebGL experiences for brands that want to be felt, not just seen.</p>
+        <a href="#work" class="btn">See the work <span aria-hidden="true">↓</span></a>
+      </div>
+      <p class="hint mono reveal" style="--d:.7s" aria-hidden="true">move your cursor — the form listens</p>
+    </section>
+
+    <section class="marquee" aria-hidden="true">
+      <div class="track mono">
+        <span>WebGL ✦ Product visualisation ✦ Motion identity ✦ Shaders ✦ Interactive installations ✦ Launch films ✦ </span>
+        <span>WebGL ✦ Product visualisation ✦ Motion identity ✦ Shaders ✦ Interactive installations ✦ Launch films ✦ </span>
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <h2 class="section-title"><span class="mono">01</span> What we do</h2>
+      <ol class="service-list">
+        <li class="io">
+          <span class="num mono">/a</span>
+          <h3>Interactive 3D web</h3>
+          <p>Real-time scenes in the browser — product configurators, immersive landing pages and playful brand worlds that run at 60fps on a phone.</p>
+        </li>
+        <li class="io">
+          <span class="num mono">/b</span>
+          <h3>Product animation</h3>
+          <p>Photoreal and stylised renders of things that don't exist yet. Launch films, explainer loops, social cuts.</p>
+        </li>
+        <li class="io">
+          <span class="num mono">/c</span>
+          <h3>Motion identity</h3>
+          <p>Logos that breathe, type that reacts, systems of movement that make a brand recognisable in half a second.</p>
+        </li>
+        <li class="io">
+          <span class="num mono">/d</span>
+          <h3>Shader &amp; generative art</h3>
+          <p>Custom GLSL, procedural materials and data-driven visuals for installations, stages and screens.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section id="work" class="work">
+      <h2 class="section-title"><span class="mono">02</span> Selected work</h2>
+      <div class="work-grid">
+        <article class="card io c1">
+          <div class="card-art" style="--a:#ff5a1f;--b:#3a1407"></div>
+          <div class="card-meta"><h3>Halcyon Audio</h3><p class="mono">Product launch · WebGL configurator</p></div>
+        </article>
+        <article class="card io c2">
+          <div class="card-art" style="--a:#e9d9bd;--b:#2b2620"></div>
+          <div class="card-meta"><h3>Northfold</h3><p class="mono">Motion identity · 42 animated marks</p></div>
+        </article>
+        <article class="card io c3">
+          <div class="card-art" style="--a:#ffb36b;--b:#1d140c"></div>
+          <div class="card-meta"><h3>Ore Festival</h3><p class="mono">Generative stage visuals · 3 nights</p></div>
+        </article>
+        <article class="card io c4">
+          <div class="card-art" style="--a:#c8401a;--b:#120c09"></div>
+          <div class="card-meta"><h3>Vessel Ceramics</h3><p class="mono">Photoreal product film · 60s</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="process" class="process">
+      <h2 class="section-title"><span class="mono">03</span> How it moves</h2>
+      <div class="steps">
+        <div class="step io"><span class="big">Sketch</span><p>Rough boards and motion tests within the first week — you'll see it moving before you see a deck.</p></div>
+        <div class="step io"><span class="big">Sculpt</span><p>Modelling, look-dev and shader work, reviewed live in the browser, not in screenshots.</p></div>
+        <div class="step io"><span class="big">Ship</span><p>Optimised, tested on real devices, and handed over with source files and documentation.</p></div>
+      </div>
+      <dl class="stats">
+        <div class="io"><dt class="mono">Projects shipped</dt><dd>140+</dd></div>
+        <div class="io"><dt class="mono">Avg. frame time</dt><dd>&lt;16ms</dd></div>
+        <div class="io"><dt class="mono">Awards</dt><dd>23</dd></div>
+      </dl>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="contact-intro io">
+        <h2>Got something<br/>that should <em>move?</em></h2>
+        <p>Tell us about it. We reply within two working days.</p>
+        <p class="mono small">hello@moderna.studio</p>
+      </div>
+
+      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form io" novalidate>
+        <input type="hidden" name="form-name" value="contact" />
+        <p class="hp"><label>Don't fill this out: <input name="bot-field" /></label></p>
+        <label class="field">
+          <span class="mono">Name</span>
+          <input type="text" name="name" required minlength="2" autocomplete="name" />
+          <small class="err" aria-live="polite"></small>
+        </label>
+        <label class="field">
+          <span class="mono">Email</span>
+          <input type="email" name="email" required autocomplete="email" />
+          <small class="err" aria-live="polite"></small>
+        </label>
+        <label class="field">
+          <span class="mono">Budget</span>
+          <select name="budget">
+            <option value="">Not sure yet</option>
+            <option>Under €10k</option>
+            <option>€10k – €30k</option>
+            <option>€30k – €80k</option>
+            <option>€80k+</option>
+          </select>
+        </label>
+        <label class="field">
+          <span class="mono">Project</span>
+          <textarea name="message" rows="4" required minlength="10"></textarea>
+          <small class="err" aria-live="polite"></small>
+        </label>
+        <button type="submit" class="btn btn-solid">Send message <span aria-hidden="true">→</span></button>
+        <p class="form-status mono" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span class="logo">Moderna<span>®</span></span>
+    <span class="mono">© <span id="year"></span> Moderna Studio</span>
+    <a href="#top" class="mono">Back to top ↑</a>
+  </footer>
+
+  <script type="module" src="/main.js"></script>
+  <script type="module" src="/ui.js"></script>
+</body>
+</html>
